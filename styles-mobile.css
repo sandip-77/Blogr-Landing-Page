@@ -1,0 +1,130 @@
+@media (max-width: 767px){
+    .main{
+         overflow-x: hidden;
+         min-height: 588px;
+    }
+    .menu{
+        display: none !important;
+    }
+    main .header{
+        padding-left: 1rem !important;
+    }
+    .main .intro-text h1{
+        padding: 10px 10px;
+
+    }
+    .intro-text .intro-btn .btn:nth-child(1){
+        margin-right: .5rem !important;
+    }
+    .intro-text .intro-btn .btn:nth-child(2){
+        margin-left: .5rem !important;
+    }
+    .main .intro-text{
+        padding-top: 7rem !important;
+    }
+
+    .header .sidemenu-toggler{
+        
+        display: block !important;
+    }
+
+    .bg-img{
+        min-width: 100% !important;
+    }
+
+    .home .row .col-md-6:nth-child(3) img{
+        display: none;
+    }
+    .home .row .col-md-6:nth-child(1){
+        display: block !important;
+    }
+    .home .para-2 h2 {
+        margin-top: 2rem !important;
+    }
+    .home .col-md-6:nth-child(2) {
+        padding: 0 1.5rem !important;
+        margin-top: 3rem !important;
+    }
+    .home .home-heading h1{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .home .para-1 h2,
+    .home .para-2 h2{
+        font-size: 1.7rem !important;
+        text-align: center !important;
+        font-size: 1.5rem !important;
+    }
+    .home .para-1 p,
+    .home .para-2 p{
+        font-size: 1rem !important;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .two-mobile{
+        margin-top: -7.5rem !important;
+        overflow: hidden;
+        width: 100%;
+        left: 0 !important;
+    }
+    .banner .col-md-6:nth-child(2) {
+        text-align: center;
+        color: white;
+        margin-top: 20rem !important;
+        
+    }
+    .banner{
+        height: 39.5rem !important;
+    }
+    .banner .col-md-6:nth-child(2) p{
+        padding:  0 1rem !important;
+    }
+
+    .description .para-1 h2,
+    .description .para-2 h2{
+        text-align: center;
+        padding-left: 1rem;
+    }
+    .description .para-1 p,
+    .description .para-2 p
+    {
+        padding-left: 1rem;
+       text-align: center;
+    }
+
+    .description .col-md-6:nth-child(1){
+        display: block !important;
+    }
+    .description .col-md-6:nth-child(2){
+        display: none !important;
+    }
+
+    .footer {
+        text-align: center;
+    }
+    .footer h1{
+        padding-bottom: 3rem;
+    }
+   
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .home .col-md-6:nth-child(3){
+        margin-top: 4rem !important;
+    }
+    .home .para-2 h2 {
+        margin-top: 2rem !important; 
+    }
+    .home .para-1 h2,
+    .home .para-2 h2{
+        font-size: 1.7rem !important;
+    }
+    .home .para-1 p,
+    .home .para-2 p{
+        font-size: 1rem !important;
+    }
+    .home .col-md-6:nth-child(2){
+        margin-top: 5rem !important;
+    }
+}

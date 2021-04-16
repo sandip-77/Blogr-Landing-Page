@@ -1,0 +1,440 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s linear;
+    overflow-x: hidden;
+
+}
+body{
+    width: 100vw;
+}
+
+body, h1, h2,h3,h4 ,h5, p,ol, ul{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1, h2,h3,h4 ,h5, p,ol, ul{
+    overflow: hidden;
+}
+ .menu ul li a{
+     cursor: pointer;
+      text-decoration:none;
+    }
+    .menu ul li a:hover{
+        color: rgba(255, 255, 255, 0.413);
+       }
+
+
+    main{
+        overflow-x:hidden;
+       border-bottom-left-radius: 50px ;
+        background: rgb(255,126,134);
+        background: linear-gradient( 90deg , rgb(255 102 98 / 88%) 52%, rgba(255,61,80,1) 100%);
+        
+    }
+
+    .main .header{
+        position: relative;
+        overflow-x:hidden;
+        padding: 1rem 3rem;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .header h1 a{
+        color: #fff;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+
+
+    .menu{
+        display: flex;
+       
+    }
+
+    .menu ul{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 13px;
+        margin-right: 1rem;
+    }
+
+    .menu ul li{
+        display: block;
+        padding: 0 2rem;
+    }
+    .menu ul li a{
+        color: #fff;
+    }
+    .menu .btns a{
+        text-decoration: none;
+        
+    }
+    .menu .btns .btn:nth-child(2){
+        color: hsl(356, 100%, 66%);
+        padding: 10px 30px;
+        background: #fff;
+        border-radius: 50px;
+    }
+    .menu .btns .btn:nth-child(2):hover{ 
+        background: rgba(255, 255, 255, 0.303);
+        color: white;
+    }
+    .menu .btns .btn:nth-child(1){
+        margin-right: 0.5rem;
+        padding: 9px 38px;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 50px;
+    }
+
+    .menu .btns .btn:nth-child(1):hover{ 
+        background: #fff;
+        color: hsl(356, 100%, 66%);
+    }
+
+
+
+    .main .intro-text{
+        position: relative;
+        text-align: center;
+        padding: 10rem 0;
+        color: #FFF;
+    }
+
+    .main .intro-text h1{
+
+        font-family: 'Overpass', sans-serif;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .main .intro-text p{
+        padding-top: 0.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    
+
+    .intro-text .intro-btn .btn:nth-child(1){
+        color: hsl(356, 100%, 66%);
+        padding:11px 24px;
+        background: #fff;
+        border-radius: 50px;
+        margin-right: 1rem;
+    }
+
+    .intro-text .intro-btn .btn:nth-child(1):hover{
+        background: rgba(255, 255, 255, 0.303);
+        color: white;
+    }
+
+    .intro-text .intro-btn .btn:nth-child(2){
+        color: white;
+        padding: 10px 30px;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        margin-left: 1rem;
+    }
+    .intro-text .intro-btn .btn:nth-child(2):hover{
+        background: #fff;
+        color: #ff525d;
+    }
+
+    .bg-img{
+        overflow-x:hidden;
+        position: absolute;
+        background-image: url("images/bg-pattern-intro.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 568px;
+        min-width: 160%;
+    }
+    /* Side Menu toggler*/
+    .header .sidemenu-toggler{
+        position: absolute;
+        width: 40px;
+        padding: 6px;
+        top: 23px;
+        right: 40px;
+        display: none;
+    }
+    .header .sidemenu-toggler > span{
+        display: block;
+        background-color:white ;
+        height: 2px;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .change span:nth-child(1){
+        transform: rotate(-45deg) translate(-3px, 5px);
+    }
+    .change span:nth-child(2){
+        opacity: 0;
+    }
+    .change span:nth-child(3){
+        transform: rotate(45deg) translate(-6px, -8px);
+    }
+
+    /* side menu */
+    .sidemenu{
+        position: fixed;
+        text-align: center;
+        background-color: white;
+        color: #ff525d;
+        top: 4.5rem;
+        left: 10%;
+        right: 10%;
+        z-index: 9999;
+        padding: 40px 0;
+        height: 80vh;
+        box-shadow: 0px 2px 20px 0px rgb(255 210 210 / 75%);
+        display: none;
+        transition: transform 0.5s ease-in-out;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+     .sidemenu.active{
+        /* transform: translate3d(0,0,0); */
+        display: block;
+        overflow-y: hidden;
+    }
+
+    .sidemenu .menu2 ul li{
+        padding: 20px 0;
+        
+    }
+
+    .sidemenu .menu2 ul li a{
+        color: black;
+        font-size: 1.3rem;
+        text-decoration: none;
+        
+    }
+    .sidemenu .menu2 ul li a:hover{
+        color: rgba(0, 0, 0, 0.475);
+    }
+
+    .sidemenu footer{
+        
+        margin-top: 10%;
+    }
+    .sidemenu footer .social a .fab{
+        padding: 20px;
+        color: rgba(255, 61, 80, 0.68);
+    }
+
+    .sidemenu .menu2 .btns {
+        margin: 35px 0;
+    }
+    .sidemenu .menu2 .btn:nth-child(1){
+        color: white;
+        padding:11px 33px;
+        background: #ff525d;
+        border-radius: 50px;
+        margin-right: 1rem;
+    }
+    .sidemenu .menu2 .btn:nth-child(1):hover{
+       background: white;
+       border: 2px solid #ff525d;
+       color: black;
+    }
+
+    .sidemenu .menu2 .btn:nth-child(2){
+        color: #ff525d;
+        padding:10px 24px;
+        border: 2px solid #ff525d;
+        border-radius: 50px;
+        margin-right: 1rem;
+    }
+    .sidemenu .menu2 .btn:nth-child(2):hover{
+        background: #ff525d;
+        color: white;
+     }
+
+     /* Home section */
+
+
+     .home .home-heading  h1{
+         font-size: 3rem;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        color: hsl(208, 49%, 24%);
+     }
+
+     .home .col-md-6:nth-child(2){
+         padding-left: 4rem;
+         padding-top: 8rem;
+     }
+
+     .home .para-1 h2{
+         font-size: 2rem ;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 600;
+       padding-bottom: 2rem;
+       color:hsl(208, 49%, 24%);
+     }
+
+     .home .para-1 p{
+         font-size: 1.3rem;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 300;
+        padding-bottom: 4rem;
+     }
+
+     .home .para-2 h2{
+         font-size: 2rem;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 600;
+       color:hsl(208, 49%, 24%);
+     }
+
+     .home .para-2 p{
+        font-size: 1.3rem;
+         padding-top: 2rem;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 300;
+     }
+
+     .home .row .col-md-6:nth-child(1){
+         display: none;
+     }
+
+     /* Banner section */
+     .banner{
+         background-color: #505377;
+         height: 24.5rem;
+         border-bottom-left-radius: 50px ;
+         border-top-right-radius: 50px ;
+     }
+     .banner .row{
+        position: relative;
+        margin-right: 0% !important;
+     }
+     
+     .banner .col-md-6:nth-child(2){
+         color: white ;
+         margin-top: 5rem;
+         padding-left: 2rem;
+     }
+     .banner .col-md-6:nth-child(2) h2{
+         margin-bottom: 2rem;
+         font-family: 'Overpass', sans-serif;
+         font-weight: 600;
+     }
+     .banner .col-md-6:nth-child(2) p{
+         padding-right: 5rem;
+         font-family: 'Overpass', sans-serif;
+         font-weight: 300;
+     }
+     .bg-img-2{
+        overflow:visible;
+        position: absolute;
+        background-image: url("images/bg-pattern-circles.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        min-width: 65%;
+        min-height: 367.5px;
+     }
+
+     .two-mobile{
+         position: absolute;
+         margin-top: -4.5rem;
+         left: 3.5rem;
+     }
+
+        /***************** Description Starts *********************/
+     .description .row .col-md-6:nth-child(2) img{
+         width: 116%;
+         margin-left: -14.5rem;
+     }
+
+     .description .col-md-6:nth-child(2){
+         display: block;
+     }
+
+     .description .col-md-6:nth-child(1){
+        display: none;
+    }
+
+     
+
+    .description .col-md-6:nth-child(3){
+        
+        padding-top: 8rem;
+    }
+
+    .description .para-1 h2{
+        
+       font-family: 'Overpass', sans-serif;
+       font-weight: 600;
+      padding-bottom: 2rem;
+      color:hsl(208, 49%, 24%);
+    }
+
+    .description .para-1 p,
+    .description .para-2 p
+    {
+        font-size: 1rem;
+       font-family: 'Overpass', sans-serif;
+       font-weight: 300;
+       padding-bottom: 2rem;
+       padding-right: 1rem;
+    }
+
+    .description .para-2 h2{
+       
+       font-family: 'Overpass', sans-serif;
+       font-weight: 600;
+      color:hsl(208, 49%, 24%);
+    }
+
+    .footer {
+        padding: 5rem 2rem;
+        background-color: rgb(43, 43, 43);
+        color: white;
+        font-family: 'Overpass', sans-serif;
+        border-top-right-radius:80px ;
+        overflow-x: hidden;
+    }
+    .footer h1 a{
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .footer h5{
+        font-family: 'Overpass', sans-serif;
+        font-weight: 300;
+        margin-top: .8rem;
+        padding-bottom: 2rem;
+        cursor: default;
+    }
+    .footer ul li{
+        overflow: unset;
+    }
+    .footer ul li a{
+        font-family: 'Overpass', sans-serif;
+        font-weight: 300;
+        padding-bottom:.5rem;
+        color: rgb(147, 146, 146);
+        cursor: pointer;
+    }
+
+    .footer ul li a:hover{
+        text-decoration: underline;
+        color: white;
+    }
+
+    
+     
